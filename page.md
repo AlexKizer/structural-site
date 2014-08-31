@@ -1,5 +1,6 @@
 ---
 title: This is a Page
+layout: default
 ---
 Hello!
 ------
