@@ -1,0 +1,35 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fonts;
+  color: $dark;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: arial, sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 36pt;
+}
+
+h2 {
+  font-size: 26pt;
+  margin-top: 10px;
+}
+
+.triangular {
+  background: linear-gradient(
+    rgba(0, 0, 255, .4),
+    rgba(0, 0, 255, .4)
+  ),
+  url('../img/triangular.png');
+  color: white;
+}
+

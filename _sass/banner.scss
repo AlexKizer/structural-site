@@ -1,0 +1,12 @@
+@import 'variables';
+
+
+.logo {
+  color: #222;
+}
+
+.tagline {
+  position: absolute;
+  left: $padding-horizontal;
+  bottom: 0;
+}

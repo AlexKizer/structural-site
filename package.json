@@ -1,0 +1,16 @@
+{
+  "name": "structural-app",
+  "description": "Visualize and understand foundational data structures.",
+  "version": "0.0.1",
+  "repository": "AlexKizer/structural-app",
+  "author": "Alex Kizer <apkizer2@illinois.edu>",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-concat": "*",
+    "gulp-sass": "*",
+    "gulp-minify-css": "*",
+    "gulp-clean": "*",
+    "gulp-rename": "*",
+    "colors": "*"
+  }
+}
