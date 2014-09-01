@@ -1,11 +1,12 @@
 .btn {
-  @include element-primary();
+  @include element-secondary();
   @include user-select(none);
   display: inline-block;
   position: relative;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  font-size: 16pt;
   text-shadow: 1px 1px black;
   background: $btn-background-pattern;
   border-radius: $btn-border-radius;
@@ -25,7 +26,7 @@
 }
 
 .btn > div:hover {
-  background: darken($btn-background-color, 10%);
+  background: lighten($btn-background-color, 10%);
   transition: $transition-time-short;
 }
 
@@ -34,7 +35,20 @@
   transition: $transition-time-short;
 }
 
+.btn svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
 .btn-ds {
   width: 100%;
   height: 100%;
+}
+
+.btn-ds > div {
+  padding-top: 10px;
 }
