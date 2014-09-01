@@ -1,10 +1,11 @@
+@import 'variables';
+
 @import 'vendor/fonts';
 @import 'vendor/normalize';
 @import 'vendor/responsive';
 
-@import 'variables';
-
 @import 'layout/_typography';
+@import 'layout/_page';
 @import 'layout/_grid';
 
 @import 'ui/_base';

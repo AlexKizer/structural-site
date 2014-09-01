@@ -5,13 +5,13 @@
 $top-height: 75px;
 $padding-horizontal: 15%;
 
-/* Transition Times */
+// Transition Times
 
 $transition-time-micro: .1s;
 $transition-time-short: .25s;
 
 
-/* Typography */
+// Typography
 
 $font-family-primary: arial, sans-serif;
 $font-family-secondary: 'Open Sans';
@@ -21,7 +21,7 @@ $font-size-medium: 26pt;
 $font-size-large: 32pt;
 
 
-/* Colors */
+// Colors
 
 $color-primary: #000000;
 
@@ -29,20 +29,20 @@ $color-action-primary: #4747d1;
 $color-action-secondary: #ffffff;
 
 
-/* Buttons */
+// Buttons
 
 $btn-border-radius: 5px;
 $btn-background-color: rgba(0, 0, 255, .6);
 $btn-background-pattern: url('../img/triangular.png');
 
-/* Page */
+// Page
 
 $page-section-height-small: 100px;
 $page-section-height-medium: 200px;
 $page-section-height-large: 300px;
 
 
-/* Mixins */
+// Mixins
 
 @mixin user-select($bool) {
   -webkit-touch-callout: $bool;
