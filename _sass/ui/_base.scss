@@ -1,0 +1,9 @@
+@mixin element-primary() {
+  color: black;
+  font-family: arial, sans-serif;
+}
+
+@mixin element-secondary() {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}

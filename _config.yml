@@ -1,6 +1,9 @@
+title: Structural
 exclude:
     - gulpfile.js
     - Gemfile
     - Gemfile.lock
     - package.json
     - node_modules
+    - bower.json
+    - bower_components

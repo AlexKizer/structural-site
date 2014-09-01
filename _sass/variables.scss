@@ -1,20 +1,54 @@
-$primary-color: #4747d1;
-$primary-light: #5959D6;
-
-$primary-alt: #11ac3f;
-$primary-alt-light: #1ccf53;
-
-$dark: #222;
-
-
-$text-color: #ffffff;
-
-$fonts: 'Open Sans', arial, sans-serif;
-
-$transition-time-micro: .1s;
-$transition-time-short: .25s;
+* {
+  box-sizing: border-box;
+}
 
 $top-height: 75px;
 $padding-horizontal: 15%;
 
+/* Transition Times */
 
+$transition-time-micro: .1s;
+$transition-time-short: .25s;
+
+
+/* Typography */
+
+$font-family-primary: arial, sans-serif;
+$font-family-secondary: 'Open Sans';
+
+$font-size-small: 12pt;
+$font-size-medium: 26pt;
+$font-size-large: 32pt;
+
+
+/* Colors */
+
+$color-primary: #000000;
+
+$color-action-primary: #4747d1;
+$color-action-secondary: #ffffff;
+
+
+/* Buttons */
+
+$btn-border-radius: 5px;
+$btn-background-color: rgba(0, 0, 255, .6);
+$btn-background-pattern: url('../img/triangular.png');
+
+/* Page */
+
+$page-section-height-small: 100px;
+$page-section-height-medium: 200px;
+$page-section-height-large: 300px;
+
+
+/* Mixins */
+
+@mixin user-select($bool) {
+  -webkit-touch-callout: $bool;
+  -webkit-user-select: $bool;
+  -khtml-user-select: $bool;
+  -moz-user-select: $bool;
+  -ms-user-select: $bool;
+  user-select: $bool;
+}

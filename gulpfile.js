@@ -11,37 +11,16 @@ gulp.task('clean', function() {
 });
 
 gulp.task('scss-concat-minify', function() {
-  gulp.src('./src/scss/*.scss')
+  gulp.src('./_sass/*.scss')
     .pipe(sass())
 
     .pipe(concat('style.css'))
-    .pipe(gulp.dest('./build/css'))
+    .pipe(gulp.dest('./css'))
 
     .pipe(minifycss())
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('./build/css'));
+    .pipe(gulp.dest('./css'));
 });
-
-gulp.task('copycss', function() {
-  gulp.src(['./src/css/*.css', './bower_components/structural-core/build/structural.css'])
-    .pipe(gulp.dest('./build/css'));
-});
-
-gulp.task('copyhtml', function() {
-  gulp.src('./src/*.html')
-    .pipe(gulp.dest('./build'));
-});
-
-gulp.task('copyimg', function() {
-  gulp.src('./src/img/*.*')
-    .pipe(gulp.dest('./build/img'));
-});
-
-gulp.task('copyjs', function() {
-  gulp.src('./src/js/*.js')
-    .pipe(gulp.dest('./build/js/'));
-});
-
 
 gulp.task('copylibs', function() {
   gulp.src(['./bower_components/jquery/dist/jquery.min.js', './bower_components/jquery/dist/jquery.min.map', './bower_components/Snap.svg/dist/snap.svg-min.js', './bower_components/structural-core/build/structural.min.js'])
@@ -50,4 +29,4 @@ gulp.task('copylibs', function() {
 
 // gulp.watch('./src/scss/*.scss', ['scss-concat-minify']);
 
-gulp.task('default', ['scss-concat-minify', 'copyhtml', 'copycss', 'copyimg', 'copyjs', 'copylibs']);
+gulp.task('default', ['scss-concat-minify']);

@@ -1,0 +1,8 @@
+{
+  "name": "structural-app",
+  "dependencies": {
+    "jquery": "*",
+    "Snap.svg": "*",
+    "structural-core": "git://github.com/AlexKizer/structural-core.git"
+  }
+}

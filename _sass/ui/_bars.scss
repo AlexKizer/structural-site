@@ -1,0 +1,8 @@
+.bar {
+  @include element-primary();
+  padding-left: 15px;
+  width: 100%;
+  height: 25px;
+  text-align: left;
+  background: url('../img/triangular.png');
+}
