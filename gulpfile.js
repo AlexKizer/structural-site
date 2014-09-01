@@ -29,4 +29,4 @@ gulp.task('copylibs', function() {
 
 // gulp.watch('./src/scss/*.scss', ['scss-concat-minify']);
 
-gulp.task('default', ['scss-concat-minify']);
+gulp.task('default', ['copylibs', 'scss-concat-minify']);
