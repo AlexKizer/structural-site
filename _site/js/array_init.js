@@ -2,7 +2,7 @@ $(document).ready(function() {
   console.info('Initializing array');
 
   var stage = $('#structure-stage'),
-      arr = [4, 23, 9, 72, 3];
+      arr = [4, 23, 9, 72, 3, 15, 8, 81, 9, 1, 99];
 
   var array = S.components.array2(arr);
   var scope = new S.Scope(array);
