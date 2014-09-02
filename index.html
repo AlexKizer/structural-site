@@ -8,7 +8,7 @@ layout: default
             <div>
                 {{ structure | capitalize }}
             </div>
-            <svg class="{{structure}}-svg">
+            <svg class="{{structure | remove : ' ' | downcase}}-svg">
 
             </svg>
         </a>

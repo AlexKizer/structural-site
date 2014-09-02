@@ -5,11 +5,11 @@ $(document).ready(function() {
 
     App.drawIcons = function() {
       $('.btn svg').width($('.btn svg').parent().width());
-      var bstIcon = Snap('.tree-svg'),
+      var bstIcon = Snap('.binarytree-svg'),
         arrayIcon = Snap('.array-svg'),
         //stackQueueIcon = Snap('.btn-ds.img.three'),
-        width = $('.tree-svg').width(),
-        height = $('.tree-svg').height();
+        width = $('.binarytree-svg').width(),
+        height = $('.binarytree-svg').height();
       console.log('width is %s', width);
       App.drawIcons.drawBST(bstIcon, width, height);
       App.drawIcons.drawArray(arrayIcon, width, height);
