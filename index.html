@@ -4,7 +4,7 @@ layout: default
 <div class="section group button-row">
     {% for structure in site.structures %}
     <div class="col span_1_of_4">
-        <a class="btn btn-ds" href="./{{structure}}.html">
+        <a class="btn btn-ds" href="./{{structure | remove : ' ' | downcase}}.html">
             <div>
                 {{ structure | capitalize }}
             </div>

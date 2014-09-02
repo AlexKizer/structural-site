@@ -1,7 +1,7 @@
 title: Structural
 structures:
-    - tree
-    - array
+    - Binary Tree
+    - Array
 exclude:
     - gulpfile.js
     - Gemfile
