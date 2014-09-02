@@ -23,7 +23,7 @@ gulp.task('scss-concat-minify', function() {
 });
 
 gulp.task('copylibs', function() {
-  gulp.src(['./bower_components/jquery/dist/jquery.min.js', './bower_components/jquery/dist/jquery.min.map', './bower_components/Snap.svg/dist/snap.svg-min.js', './bower_components/structural-core/build/structural.min.js'])
+  gulp.src(['./bower_components/jquery/dist/jquery.min.js', './bower_components/jquery/dist/jquery.min.map', './bower_components/Snap.svg/dist/snap.svg-min.js', './bower_components/structural-core/build/structural.min.js', './bower_components/jquery.terminal/js/jquery.terminal-0.8.8.min.js'])
     .pipe(gulp.dest('./js/lib'));
 });
 

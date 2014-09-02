@@ -2,10 +2,21 @@
   height: $top-height;
 
   .logo {
+    font-size: 26pt;
     line-height: $top-height;
+    margin-left: 10px;
   }
 
   .nav {
     line-height:  $top-height;
   }
+}
+
+.btn-logo {
+  @extend .btn-ds;
+  font-size: 28pt !important;
+}
+
+.btn-logo > div {
+  line-height: $top-height;
 }

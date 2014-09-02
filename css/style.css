@@ -406,7 +406,7 @@ p {
   top: 0; }
 
 .button-row {
-  height: 200px; }
+  height: 175px; }
 
 .col {
   height: 100%; }
@@ -414,9 +414,17 @@ p {
 .top {
   height: 75px; }
   .top .logo {
-    line-height: 75px; }
+    font-size: 26pt;
+    line-height: 75px;
+    margin-left: 10px; }
   .top .nav {
     line-height: 75px; }
+
+.btn-logo {
+  font-size: 28pt !important; }
+
+.btn-logo > div {
+  line-height: 75px; }
 
 .logo {
   font-size: 36pt;
@@ -437,11 +445,15 @@ p {
 .bar {
   color: black;
   font-family: arial, sans-serif;
-  padding-left: 15px;
+  font-size: 20pt;
+  padding-left: 10px;
   width: 100%;
-  height: 25px;
+  height: 50px;
+  line-height: 50px;
+  padding-bottom: 5px;
+  border-radius: 5px;
   text-align: left;
-  background: url('../img/triangular.png'); }
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../img/triangular.png'); }
 
 .btn {
   color: white;
@@ -490,11 +502,11 @@ p {
   width: 100%;
   pointer-events: none; }
 
-.btn-ds {
+.btn-ds, .btn-logo {
   width: 100%;
   height: 100%; }
 
-.btn-ds > div {
+.btn-ds > div, .btn-ds > .btn-logo {
   padding-top: 10px; }
 
 * {

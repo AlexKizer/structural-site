@@ -1,8 +1,8 @@
----
-layout: default
----
+{% include header.html script="js/lib/jquery.terminal-8.8.8.min.js" %}
 <div class="section group">
-    <h2 class="structure-title">{{page.structure}}</h2>
+    <div class="bar">
+        <span>{{page.structure}}</span>
+    </div>
 </div>
 <div class="section group structure-show">
     <div class="span_2_of_4 structure-stage">
@@ -12,3 +12,4 @@ layout: default
 
     </div>
 </div>
+{% include footer.html %}
