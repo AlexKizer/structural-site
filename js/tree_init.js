@@ -24,7 +24,5 @@ $(document).ready(function() {
     height: stage.height()
   });
 
-  console.dir(stage);
-
   stage.append(tree.view.render());
 });
