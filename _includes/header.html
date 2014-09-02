@@ -3,14 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>{{page.title}}</title>
+    <link rel="stylesheet" href="css/jquery.terminal.css"/>
+    <link rel="stylesheet" href="css/structural.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script type="text/javascript" src="js/lib/jquery.min.js"></script>
     <script type="text/javascript" src="js/lib/snap.svg-min.js"></script>
     <script type="text/javascript" src="js/lib/structural.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.terminal-0.8.8.min.js"></script>
+    {% if include.script %}
     <script type="text/javascript" src="{{include.script}}"></script>
+    {% endif %}
     {% comment %} Insert data structure init code... {% endcomment %}
     {% if page.init %}
-        <script type="text/javascript" src="js/{{page.init}}_init.js"></script>
+    <script type="text/javascript" src="js/{{page.init}}_init.js"></script>
     {% endif %}
 </head>
 <body>

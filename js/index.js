@@ -51,14 +51,35 @@ $(document).ready(function() {
       $('.stage').height($(window).height() / 3);
     }
 
+    App.initTerminal = function() {
+      console.info('Initializing terminal');
+      $('.structure-terminal').terminal(function(command, terminal){
+        if(command) {
+          try {
+            window.eval(command);
+          } catch(e) {
+            terminal.error(e.message);
+          }
+        }
+      }, {
+        greetings: 'Use this terminal to interact with the data structure.',
+        name: 'structure-terminal',
+        height: 250,
+        prompt: '$ '
+      });
+    }
+
     return App;
   })();
 
   $(window).resize(function() {
-    if($('.btn svg'))
+    if($('.btn svg').length > 0)
       App.drawIcons();
   });
 
-  if($('.btn svg'))
+  if($('.btn svg').length > 0)
     App.drawIcons();
+
+  if($('.structure-terminal').length > 0)
+    App.initTerminal();
 });

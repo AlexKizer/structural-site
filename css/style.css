@@ -426,6 +426,16 @@ p {
 .btn-logo > div {
   line-height: 75px; }
 
+.structure-show {
+  height: 500px; }
+
+.structure-terminal {
+  height: 250px;
+  background: #000; }
+
+.structure-stage {
+  height: 100%; }
+
 .logo {
   font-size: 36pt;
   color: #222222; }
