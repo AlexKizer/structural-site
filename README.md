@@ -2,7 +2,7 @@ structural-site
 ===============
 
 ## Workflow
-
+ 
 ### Setup
 First, run `npm install` and `bower install` to install build and library dependencies, respectively. Then, run
 `gem install bundler` and then `bundler install jekyll` if you want to use jekyll to build and host the site on your
