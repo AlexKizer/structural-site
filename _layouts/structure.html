@@ -16,9 +16,11 @@ layout: default
     <div class="bar">
         <span>Available Methods</span>
     </div>
-    {% for method in page.methods %}
-    <h3>{{ method }}</h3>
-    {% endfor %}
+    <ul>
+        {% for method in page.methods %}
+        <li>{{ method }}</li>
+        {% endfor %}
+    </ul>
 </div>
 
 <!--<div class="section group">
